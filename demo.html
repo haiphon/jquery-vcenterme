@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Lettertwist Demo</title>
+
+<style type="text/css">
+	html { height: 100%; }
+	body { background-color: #22b573; height: 100%; margin: 0px; }
+	.centerme { width: 100px; height: 100px; background-color: #ffe88b; margin-left: 20%; }
+	.content { width: 100%; height: 100%; overflow: auto; }
+</style>
+</head>
+<body>
+<div class="content">
+	<div class="centerme"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.vcenterme.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".centerme").vcenterme();
+	});
+	$(window).resize(function() {
+		$(".centerme").vcenterme();
+	});
+</script>
+</body>
+</html>
